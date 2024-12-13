@@ -29,9 +29,9 @@ export default function Home() {
   ];
 
   return (
-    <div className="min-h-screen bg-gray-900 text-gray-200">
+    <div className="min-h-screen bg-gray-900 text-gray-200 ">
       {/* Header */}
-      <header className="flex items-center justify-between px-8 py-4 bg-navy-light shadow-md">
+      <header className="flex items-center justify-between px-8 py-4 bg-navy-light shadow-md z-10 relative">
         <h1 className="text-xl font-bold text-[#6C63FF]">AI Ethics</h1>
         <Link href="/blog" className="text-[#6C63FF] hover:underline">
           Blog
@@ -40,8 +40,8 @@ export default function Home() {
 
       <main className="container mx-auto px-4 py-12 space-y-16">
         {/* Hero Section */}
-        <section className="text-center">
-          <h2 className="text-4xl font-extrabold text-gray-100">
+        <section className="text-center z-10 relative">
+          <h2 className="text-4xl font-extrabold text-gray-100 z-10 relative">
             The Ethics of AI
           </h2>
           <p className="mt-4 text-lg text-gray-400">
@@ -55,24 +55,30 @@ export default function Home() {
         {/* About Section */}
         <section
           id="about"
-          className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center"
+          className="grid grid-cols-1  gap-8 items-center min-h-[60vh] " // Control the height here
         >
-          <div>
-            <h3 className="text-2xl font-bold text-gray-100">About</h3>
-            <p className="mt-4 text-gray-400">
+          <div className="relative z-10 pl-10">
+            <h3 className="text-3xl font-bold text-gray-100 text-center">
+              About
+            </h3>
+            <p className="mt-4 text-white">
               Artificial intelligence is transforming every industry, but with
               great power comes great responsibility. As AI becomes more
               embedded in our daily lives, ethical considerations such as bias,
               privacy, and transparency are more important than ever.
             </p>
           </div>
-          <Image
-            src="/AIvector.svg"
-            alt="AI Ethics Illustration"
-            width={500}
-            height={400}
-            className="rounded-lg shadow-md"
-          />
+
+          {/* Image Container */}
+          <div className="absolute top-0 left-0 w-full h-full z-0">
+            <Image
+              src="/funnyAIimage.jpg"
+              alt="AI Ethics Illustration"
+              layout="fill"
+              objectFit="cover"
+              className="opacity-40"
+            />
+          </div>
         </section>
 
         {/* Key Issues Section */}
