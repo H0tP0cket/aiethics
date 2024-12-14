@@ -126,7 +126,7 @@ export default function Home() {
           <ul className="mt-8 space-y-4">
             <li>
               <a
-                href="https://www.ieee.org/"
+                href="https://itcc.ieee.org/news/what-are-the-building-blocks-of-sustainable-ai-from-design-to-deployment/"
                 className="text-[#6C63FF] hover:underline"
                 target="_blank"
                 rel="noopener noreferrer"
