@@ -21,6 +21,18 @@ export default function Blog() {
         "Key considerations for safeguarding personal data in the age of AI...",
       href: "/blog/data-privacy",
     },
+    {
+      title: "Energy Consumption in AI",
+      excerpt:
+        "Analyzing the massive energy demands of AI systems and how to mitigate their environmental impact...",
+      href: "/blog/energy",
+    },
+    {
+      title: "E-Waste and AI",
+      excerpt:
+        "Exploring the rise of electronic waste due to AI hardware and how to promote sustainable solutions...",
+      href: "/blog/waste",
+    },
   ];
 
   return (
