@@ -1,6 +1,7 @@
 // pages/index.js
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -31,7 +32,17 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-gray-900 text-gray-200 ">
       {/* Header */}
-      <header className="flex items-center justify-between px-8 py-4 bg-navy-light shadow-md z-10 relative">
+      <Head>
+        <title>AI Ethics</title>
+        <link rel="icon" href="/logos/favicon.ico" />
+        <link
+          rel="preload"
+          href="/public/fonts/Helveticaimage.png.ttf"
+          as="font"
+          crossOrigin=""
+        />
+      </Head>
+      <header className="flex items-center justify-between px-8 py-4 bg-gray-900  opacity-70 shadow-md z-10 relative">
         <h1 className="text-xl font-bold text-[#6C63FF]">AI Ethics</h1>
         <Link href="/blog" className="text-[#6C63FF] hover:underline">
           Blog
@@ -62,10 +73,30 @@ export default function Home() {
               About
             </h3>
             <p className="mt-4 text-white">
-              Artificial intelligence is transforming every industry, but with
-              great power comes great responsibility. As AI becomes more
-              embedded in our daily lives, ethical considerations such as bias,
-              privacy, and transparency are more important than ever.
+              <b className="text-4xl font-extrabold">Artificial intelligence</b>{" "}
+              is disrupting industries in 2024, from healthcare and education to
+              finance and entertainment. Generative AI is changing the game of
+              content creation, while AI-powered tools improve diagnostics and
+              personalized medicine. However, all these developments come with
+              considerable ethical issues, such as{" "}
+              <b className="text-2xl font-extrabold">
+                bias, privacy, and transparency.
+              </b>{" "}
+              Biased algorithms run the risk of perpetuating inequities within
+              society, and the use of so much personal data opens up the
+              potential for surveillance and misuse. In particular, transparency
+              is a key component in developing trust and accountability in
+              high-stakes decisions. With deep integration of AI in daily life,
+              addressing ethical concerns has acquired greater relevance.
+              Fairness, explainability, and respect for privacy are some of the
+              key features that AI systems need to be assured of by governments,
+              organizations, and communities. By focusing on ethical
+              development, we are able to realize the tremendous potential of
+              AI,{" "}
+              <b className="text-2xl font-extrabold">
+                while protecting human rights and values
+              </b>
+              .
             </p>
           </div>
 
@@ -155,9 +186,6 @@ export default function Home() {
       </main>
 
       {/* Footer */}
-      <footer className="bg-navy-light py-4 text-center text-gray-400">
-        © 2024 AI Ethics
-      </footer>
     </div>
   );
 }

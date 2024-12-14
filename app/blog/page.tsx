@@ -48,9 +48,6 @@ export default function Blog() {
           ))}
         </ul>
       </main>
-      <footer className="bg-navy-light py-4 text-center text-gray-400">
-        © 2024 AI Ethics Blog
-      </footer>
     </div>
   );
 }
