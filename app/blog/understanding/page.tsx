@@ -34,7 +34,7 @@ export default function UnderstandingBiasInAI() {
             href="https://www.brookings.edu/articles/algorithmic-bias-detection-and-mitigation-best-practices-and-policies-to-reduce-consumer-harms/"
             className="text-[#6C63FF] hover:underline"
           >
-            Nature - Bias in AI
+            Brookings - Bias in AI
           </a>
         </p>
       </main>

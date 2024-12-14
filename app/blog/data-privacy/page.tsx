@@ -28,10 +28,10 @@ export default function DataPrivacyInAI() {
         <p className="text-gray-400">
           Source:{" "}
           <a
-            href="https://builtin.com/artificial-intelligence/ai-bias"
+            href="https://hai.stanford.edu/news/privacy-ai-era-how-do-we-protect-our-personal-information"
             className="text-[#6C63FF] hover:underline"
           >
-            OECD - AI and Data Privacy
+            Stanford - AI and Data Privacy
           </a>
         </p>
       </main>

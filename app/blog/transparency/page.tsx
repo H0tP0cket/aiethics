@@ -32,7 +32,7 @@ export default function TransparencyInAI() {
             href="https://www.oceg.org/what-does-transparency-really-mean-in-the-context-of-ai-governance/"
             className="text-[#6C63FF] hover:underline"
           >
-            ArXiv - Explainable AI
+            OCEG - Transparency in AI and governance
           </a>
         </p>
       </main>
